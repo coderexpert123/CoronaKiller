@@ -1,0 +1,35 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    height: 100vh;
+ background-color: rgba(0, 0, 0, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.border-box{
+
+    color: white;
+}
+.main{
+margin-top: 20px;
+}
+
+.main_btn{
+
+    margin: 30px 20px;
+    color: white;
+    padding: 15px;
+    outline: none;
+    
+    border-radius: 25px;
+    background-color: red;
+}

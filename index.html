@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </script>
+<!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Vertically centered modal -->
+    <h2 class="score">Score:<span>0</span></h2>
+    <div class="container">
+        <div class="meter">
+            <span style="width: 100%"></span>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+<div class="box">
+    <h1 class="box__title ">Corona Killer</h1>
+    
+
+    <!----------Internet Sonneted or NOt--------->
+    <h1 class="int" id="status"> </h1>
+
+    <script type="text/javascript">
+    window.addEventListener('online',updateStatus);
+    window.addEventListener('ofline',updateStatus);
+function updateStatus(){
+
+    var status=document.getElementById('status');
+    if(navigator.onLine){
+
+
+       // status.textContent=""
+       status.textContent="You are Back online"
+
+    }
+    else{
+        window.location="internetinfo.html";
+
+  
+    }
+};
+updateStatus();
+
+</script>
+    <!-------Finish Script ------>
+    <button class="btn start">START NOW</button>
+    <button class="btn restart" style="display: none;"> RESTART</button>
+</div> 
+    <canvas class="board"></canvas>
+    <script defer src="script.js"></script>
+</body>
+</html>

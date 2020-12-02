@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="in.css">
+
+</head>
+<body>
+    
+
+
+    <div class="border-box">
+
+        <h1 id="status"> </h1>
+
+        <script type="text/javascript">
+        window.addEventListener('online',updateStatus);
+        window.addEventListener('ofline',updateStatus);
+    function updateStatus(){
+    
+        var status=document.getElementById('status');
+        if(navigator.onLine){
+            window.location="index.html";
+
+        }
+        else{
+            status.textContent="Internet Not Connected"
+        }
+    };
+    updateStatus();
+    
+    </script>
+<ul class="main">
+    <li>
+        Check Your Modem/Network
+
+    </li>
+    <li>
+        Check Your Network connection/Wifi
+        
+    </li>
+
+    <li>
+       Refresh Your Browser
+        
+    </li>
+</ul>
+
+<button  class="main_btn">
+  <h5 href="">Launch Game</h5> 
+</button>
+ 
+    </div>
+</body>
+</html>
